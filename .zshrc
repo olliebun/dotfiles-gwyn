@@ -61,3 +61,6 @@ source ~/.asdf/asdf.sh
 ## AWS
 export AWS_DEFAULT_REGION=ap-southeast-2
 export AWS_VAULT_BACKEND=pass
+
+## GO
+export PATH=$PATH:$HOME/go/bin
