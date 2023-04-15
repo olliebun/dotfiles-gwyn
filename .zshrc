@@ -15,6 +15,7 @@ setopt appendhistory
 
 # SYSTEM CONFIGURATION
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+export EDITOR=/usr/bin/nvim
 
 # DOTFILES
 alias dgit='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
