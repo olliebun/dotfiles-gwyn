@@ -1,0 +1,47 @@
+[user]
+	name = Oliver Hassett
+	email = oliverlouishassett@gmail.com
+	signingkey = B896994265C51544
+[commit]
+	gpgSign = true
+[init]
+	defaultBranch = main
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[diff]
+	submodule = log
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+	track = "push -u origin "
+[branch]
+	autosetuprebase = always
+[branch "main"]
+[remote "origin"]
+	prune = true
+	tagOpt = --tags
+[rebase]
+	autosquash = true
+	autoStash = true
+[pull]
+	rebase = true
+[core]
+	excludesfile = ~/.gitignore_global
+	preloadindex = true
+[rerere]
+	enabled = true
+[merge]
+	conflictstyle = diff3
+[tag]
+	sort = version:refname
+[versionsort]
+	suffix = -rc
+[credential]
+	helper = store
+[url "ssh://git@github.com/flipgroup"]
+	insteadOf = https://github.com/flipgroup
+[pager]
+	branch = false
+[init]
+	defaultBranch = main
