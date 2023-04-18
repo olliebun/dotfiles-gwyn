@@ -1,0 +1,10 @@
+[Unit]
+Description=Picom compositor for X windows
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/picom
+Restart=always
+
+[Install]
+WantedBy=xsession.target
