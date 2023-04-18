@@ -1,0 +1,47 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[Makefile]
+indent_style = tab
+
+[*.css]
+indent_size = 2
+
+[{go.mod,go.sum,*.go}]
+indent_style = tab
+
+[*.html]
+indent_size = 2
+
+[*.{js,json}]
+indent_size = 2
+
+[*.mjml]
+indent_size = 2
+
+[*.py]
+indent_size = 4
+
+[*.scss]
+indent_size = 2
+
+[*.sh]
+indent_size = 2
+
+[*.sql]
+indent_size = 4
+
+[*.{tf,tfvars}]
+indent_size = 2
+
+[*.vue]
+indent_size = 2
+
+[*.{yaml,yml}]
+indent_size = 2
