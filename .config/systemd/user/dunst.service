@@ -1,0 +1,10 @@
+[Unit]
+Description=Dunst notification daemon
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/dunst
+Restart=always
+
+[Install]
+WantedBy=xsession.target
