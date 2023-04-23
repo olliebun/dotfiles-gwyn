@@ -82,3 +82,10 @@ export AWS_VAULT_BACKEND=pass
 
 ## GO
 export PATH=$PATH:$HOME/go/bin
+
+## FLIP
+export PATH=$PATH:$HOME/flip/bin
+
+if [ -f ~/flip/flip.env ]; then
+  source ~/flip/flip.env
+fi
