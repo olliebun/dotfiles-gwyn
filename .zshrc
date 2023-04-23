@@ -32,6 +32,18 @@ alias ls="ls --color"
 alias pacman="sudo pacman"
 alias vim="nvim"
 
+## GIT
+gbd() {
+  GIT_UPSTREAM_REMOTE=${GIT_UPSTREAM_REMOTE:-origin}
+  GIT_UPSTREAM_HEAD=${GIT_UPSTREAM_HEAD:-main}
+
+  git remote update -p
+
+  merge_ref="${GIT_UPSTREAM_REMOTE}/${GIT_UPSTREAM_HEAD}"
+  git branch --format '%(refname:short)' --merged ${merge_ref} \
+    | xargs git branch -d
+}
+
 ## ARCH LINUX
 download_aur_package() {
   if [ "$#" -ne 1 ]; then
