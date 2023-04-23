@@ -8,14 +8,16 @@ log() {
 }
 
 # ZSH
-HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
-setopt appendhistory
 case $TERM in alacritty*)
     precmd () {print -Pn "\e]0;%~\a"}
     ;;
 esac
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
+bindkey -v
+bindkey '^R' history-incremental-search-backward
 
 # SYSTEM CONFIGURATION
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
