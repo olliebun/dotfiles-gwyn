@@ -1,4 +1,4 @@
 window:
-  opacity: 0.9
+  opacity: 0.95
   transparent_background_colors: false
   dynamic_title: true
