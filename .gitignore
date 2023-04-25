@@ -1,0 +1,15 @@
+.asdf
+.cache
+.docker
+.aws
+.config/systemd/user/*.wants
+.gnupg
+.java
+.local
+.mozilla
+.terraform.d
+.steam
+.steampath
+.steampid
+src
+Downloads
