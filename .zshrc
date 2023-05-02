@@ -86,6 +86,6 @@ export PATH=$PATH:$HOME/go/bin
 ## FLIP
 export PATH=$PATH:$HOME/flip/bin
 
-if [ -f ~/flip/flip.env ]; then
-  source ~/flip/flip.env
+if [ -f ~/src/flip/gomi/ollie/flip.sh ]; then
+  source ~/src/flip/gomi/ollie/flip.sh
 fi
