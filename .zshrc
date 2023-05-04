@@ -89,3 +89,7 @@ export PATH=$PATH:$HOME/flip/bin
 if [ -f ~/src/flip/gomi/ollie/flip.sh ]; then
   source ~/src/flip/gomi/ollie/flip.sh
 fi
+
+## NODE and NPM
+export npm_config_prefix=$HOME/.npm
+export PATH=$PATH:$npm_config_prefix/bin
