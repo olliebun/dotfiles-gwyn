@@ -1,0 +1,10 @@
+[Unit]
+Description=Simple X hotkey daemon
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/sxhkd
+Restart=always
+
+[Install]
+WantedBy=xsession.target

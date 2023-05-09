@@ -1,0 +1,6 @@
+#
+# wm independent hotkeys
+#
+
+ctrl + space + e
+  rofi -show emoji
