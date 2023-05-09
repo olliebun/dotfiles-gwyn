@@ -4,3 +4,6 @@
 
 ctrl + space + e
   rofi -show emoji
+
+ctrl + space + p
+  screenshotmenu
