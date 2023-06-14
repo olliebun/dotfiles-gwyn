@@ -11,6 +11,7 @@ general {
         interval = 5
 }
 
+order += "volume master"
 order += "wireless _first_"
 order += "ethernet _first_"
 order += "disk /"
@@ -44,4 +45,10 @@ memory {
 
 tztime local {
         format = "%A %Y-%m-%d %H:%M:%S"
+}
+
+volume master {
+        format = "♪: %volume"
+        format_muted = "♪: muted (%volume)"
+        device = "pulse:alsa_output.usb-Generic_Blue_Microphones_2051BAB0MBL8-00.analog-stereo"
 }
