@@ -1,6 +1,6 @@
 configuration {
-  modes: "window,drun,run";
-  combi-modes: "window,drun,run";
+  modes: "window,drun,run,emoji,filebrowser";
+  combi-modes: "window,drun,run,filebrowser";
 
 	font: "JetBrains Mono Nerd Font Medium 20";
   icon-theme: "Papirus";
