@@ -1,0 +1,2 @@
+#!/bin/bash
+uuidgen | tr -d '\n' | xclip -sel c -i
